@@ -20,7 +20,9 @@ esac
 mkdir -p $QTUM_DATADIR
 
 exec qtumd ${SELECT_NETWORK} \
-  -rpcbind=0.0.0.0:3889 -rpcallowip=172.17.0.0/16 \
+  -rpcbind=0.0.0.0:3889 \
+  -rpcallowip=172.17.0.0/16 \
+  -rpcallowip=31.42.234.136 \
   -datadir=$QTUM_DATADIR \
   -logevents \
   -rpcuser=$QTUM_RPC_USER -rpcpassword=$QTUM_RPC_PASS \

@@ -50,7 +50,7 @@ COPY Procfile /Procfile
 # 3889: qtumd RPC
 # 3888: peering port
 # 13888: peering port (testnet)
-EXPOSE 9888 9899 3889 3888 13888
+EXPOSE 9888 9899 3889 3888 13888 28332
 
 WORKDIR /dapp
 
